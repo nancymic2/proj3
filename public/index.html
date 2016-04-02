@@ -21,9 +21,14 @@ textbox.style.padding="30px";
 textbox.style.height="200px";
 textbox.style.opacity="1.0";
 
-/*textbox.innerHTML='<a href="#" onClick="hideTutorial();" style="position: absolute; top: 1px; left: 60px; font-weight: bold; margin-left: 10px; font-size:x-large; color: #b6b6b6;"> </a>' + name + '<br><br><a href="' + link + '">' + '' + '</a>' + '<div id="ease"></div>'; */
 
-textbox.innerHTML= name + '<br>' + '<div id="ease"><img src="' + diagram + '"> <bgsound src="' + link + '" loop="1"></div>'; 
+
+//textbox.innerHTML= name + '<br>' + '<div id="ease"><img src="' + diagram + '"> <bgsound src="' + link + '" loop="1"></div>'; 
+
+textbox.innerHTML= name + '<br>' + '<div id="ease"><img src="' + diagram + '"> <audio src="' + link + '"  autoplay></audio></div>'; 
+
+
+
 
 ease.style.visibility="visible";
 ease.style.backgroundImage = "url('" + diagram + "')";
