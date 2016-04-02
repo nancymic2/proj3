@@ -14,6 +14,7 @@ var ease=document.getElementById("ease");
 textbox.style.top="190px";
 textbox.style.left=left;
 
+
 textbox.style.visibility="visible";
 textbox.style.padding="30px";
 
@@ -22,7 +23,7 @@ textbox.style.opacity="1.0";
 
 /*textbox.innerHTML='<a href="#" onClick="hideTutorial();" style="position: absolute; top: 1px; left: 60px; font-weight: bold; margin-left: 10px; font-size:x-large; color: #b6b6b6;"> </a>' + name + '<br><br><a href="' + link + '">' + '' + '</a>' + '<div id="ease"></div>'; */
 
-textbox.innerHTML= name + '<br>' + '<div id="ease"><img src="' + diagram + '"></div>'; 
+textbox.innerHTML= name + '<br>' + '<div id="ease"><img src="' + diagram + '"> <bgsound src="' + link + '" loop="1"></div>'; 
 
 ease.style.visibility="visible";
 ease.style.backgroundImage = "url('" + diagram + "')";
@@ -128,18 +129,27 @@ body {
 <map name="image-maps-2016-04-02-112907" id="ImageMapsCom-image-maps-2016-04-02-112907">
 
 
-<area  alt="police" title="police" href="#" shape="rect" coords="186,193,285,360" style="outline:none;" target="_self"     onClick="showTutorial('Police', 'blank', '250px', '310px', '#0E2DB8', 'images/badge.png', 'images/badge.png')"  
+<area  alt="police" title="police" href="#" shape="rect" coords="186,193,285,360" style="outline:none;" target="_self"     onClick="showTutorial('Police', 'blank', '250px', '310px', '#0E2DB8', 'images/badge.png', 'images/siren.mp3')"  
             />
 
 
 
-<area  alt="plane" title="" href="#" shape="rect" coords="1746,137,1903,228" style="outline:none;" target="_self"  onClick="showTutorial('Plane', 'blank', '250px', '1410px', '#0E2DB8', 'images/plane.png', 'images/plane.png')"  
+<area  alt="plane" title="" href="#" shape="rect" coords="1746,137,1903,228" style="outline:none;" target="_self"  onClick="showTutorial('Plane', 'blank', '250px', '1410px', '#0E2DB8', 'images/plane.png', 'images/plane.mp3')"  
             />
 
 
 <area  alt="store" title="" href="http://www.image-maps.com/" shape="rect" coords="1048,200,1218,342" style="outline:none;" target="_self"     />
-<area  alt="gas" title="" href="http://www.image-maps.com/" shape="rect" coords="404,210,539,352" style="outline:none;" target="_self"     />
-<area  alt="doctor" title="" href="http://www.image-maps.com/" shape="rect" coords="10,169,155,331" style="outline:none;" target="_self"     />
+
+
+<area  alt="gas" title="" href="#" shape="rect" coords="404,210,539,352" style="outline:none;" target="_self"   onClick="showTutorial('Gas', 'blank', '250px', '310px', '#0E2DB8', 'images/gas.png', 'images/beep.mp3')"  
+            />
+
+
+
+<area  alt="doctor" title="" href="#" shape="rect" coords="10,169,155,331" style="outline:none;" target="_self"      onClick="showTutorial('Hospital', 'blank', '250px', '310px', '#0E2DB8', 'images/hospital.png', 'images/hospital.mp3')"  
+            />
+
+
 <area  alt="clouds" title="" href="http://www.image-maps.com/" shape="rect" coords="1363,145,1593,246" style="outline:none;" target="_self"     />
 <area  alt="mountains" title="" href="http://www.image-maps.com/" shape="rect" coords="1628,182,1741,279" style="outline:none;" target="_self"     />
 <area  alt="sun" title="" href="http://www.image-maps.com/" shape="rect" coords="1910,154,1997,224" style="outline:none;" target="_self"     />
@@ -149,8 +159,11 @@ body {
 <img src="images/icecream.png"><br>
 <p></p>
 <img src="images/flipflops.png"><br>
-<div id="box"><img src="imges/badge.png">
+<div id="box"><img src="imges/badge.png"><bgsound src="" loop="1">
 <div id="ease"></div>
+</div>
+<div id="sound">
+<bgsound src="" loop="1">
 </div>
 <pre>
 
