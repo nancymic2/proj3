@@ -64,13 +64,25 @@ left: 1px;
 }
 #leftimg, #rightimg {
 padding: 80px;
-border: 1px solid white;
-background-color: white;
+
+
 }
-
-
+.mytext {
+color: white;
+font-size: 3em;
+}
+.gold {
+background-color: #efc41a;
+font-size: 3em;
+color: #157b82;
+padding: 2em;
+}
 body {
 font-family: 'Arial', sans-serif !important;
 background-color: #157b82;
+/*background-color: #ff8d6d;*/
 }
-
+.fleft {
+float: left;
+margin-right: 2em;
+}
