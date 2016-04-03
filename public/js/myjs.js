@@ -1,5 +1,6 @@
 window.onload=function() {
 document.getElementById('box').addEventListener('click', hideTutorial, false);
+$('img[usemap]').rwdImageMaps();
 };
 
 function showTutorial(name, img, top, left, hpcolor, diagram, link){
