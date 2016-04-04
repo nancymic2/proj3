@@ -56,6 +56,10 @@ vertical-align: top;
 background-color: #ed3726;
 }
 
+.top-bar, .menu {
+background-color: #ed3726 !important;
+}
+
 #preloader {
 visibility: hidden;
 position: absolute;
