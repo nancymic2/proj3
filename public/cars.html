@@ -53,8 +53,8 @@
 <ul class="vertical medium-horizontal menu">
   <li><a href="index.html"><img src="images/houseMenu2.png"></a></li>
   <li><a href="cars.html"><img src="images/carMenu.png"></a></li>
-  <li><a href="#"><img src="images/flipflopsMenu.png"></a></li>
-  <!--<li><a href="#"><img src="images/noteMenu.png"></a></li>
+  <!--<li><a href="#"><img src="images/flipflopsMenu.png"></a></li>
+  <li><a href="#"><img src="images/noteMenu.png"></a></li>
   <li><a href="#"><img src="images/bedMenu.png"></a></li>
   <li><a href="#"><img src="images/volleyMenu.png"></a></li>
   <li><a href="#"><img src="images/sailMenu.png"></a></li>
