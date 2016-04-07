@@ -129,3 +129,23 @@ width: auto;
 	font-size: .7em;
 
 }
+
+#sliderOutput1 {
+  font-size: 4em;
+  height: 2em;
+  width: 2.2em;
+  padding-left: .3em;
+  color: red;
+  
+}
+.slider {
+  width: 700px;
+  height: 60px;
+}
+
+.slider-handle {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+
+}
