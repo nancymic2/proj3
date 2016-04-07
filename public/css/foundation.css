@@ -1974,7 +1974,18 @@ select {
       display: block; }
       .button-group.stacked-for-small.expanded .button {
         display: block;
-        margin-right: 0; } }
+        margin-right: 0; } 
+
+.smimg {
+  width: 50px;
+}
+body {
+  font-size: .9em !important;
+}
+.phoneimg {
+  width: 190px;
+}
+      }
 
 .callout {
   margin: 0 0 1rem 0;
