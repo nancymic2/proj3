@@ -48,3 +48,17 @@ document.getElementById("box").style.opacity="0.0";
 }
 
 
+function getmenu() {
+
+	var smallnav=document.getElementById('mymenu');
+
+	if (smallnav.style.display=="block") {
+		smallnav.style.display="none";
+	}
+	else {
+		
+		smallnav.style.display="block";
+
+	}
+
+}
