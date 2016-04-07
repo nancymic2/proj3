@@ -1985,7 +1985,16 @@ body {
 .phoneimg {
   width: 190px;
 }
-      }
+
+ label {
+  font-size: .9em !important;
+  }
+
+  #sidebar1 {
+  color: white;
+     font-size: .9em !important;
+  }
+}
 
 .callout {
   margin: 0 0 1rem 0;
