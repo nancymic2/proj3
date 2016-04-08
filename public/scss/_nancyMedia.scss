@@ -1,0 +1,39 @@
+  @media screen and (min-width: 40em) {
+    .slider {
+    width: 600px !important;
+  }
+}
+
+  @media screen and (min-width: 64em) {
+   .slider {
+    width: 700px !important;
+  }
+
+  }
+
+@media screen and (max-width: 39.9375em) {
+
+	.smimg {
+	  width: 50px;
+	}
+
+	body {
+	  font-size: 1em !important;
+	}
+
+	.phoneimg {
+	  width: 190px;
+	}
+
+	 label {
+	  font-size: .9em !important;
+	  }
+
+	  #sidebar1 {
+	  color: white;
+	     font-size: .9em !important;
+	  }
+	  .slider {
+	    width: 400px !important;
+	  }
+}
