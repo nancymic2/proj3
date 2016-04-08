@@ -1960,11 +1960,17 @@ select {
     .button-group.stacked .button:not(:last-child), .button-group.stacked-for-small .button:not(:last-child), .button-group.stacked-for-medium .button:not(:last-child) {
       margin-right: 0; }
   @media screen and (min-width: 40em) {
+          .slider {
+    width: 600px !important;
+  }
     .button-group.stacked-for-small .button {
       width: auto; }
       .button-group.stacked-for-small .button:not(:last-child) {
         margin-right: 1px; } }
   @media screen and (min-width: 64em) {
+      .slider {
+    width: 700px !important;
+  }
     .button-group.stacked-for-medium .button {
       width: auto; }
       .button-group.stacked-for-medium .button:not(:last-child) {
@@ -1993,6 +1999,9 @@ body {
   #sidebar1 {
   color: white;
      font-size: .9em !important;
+  }
+  .slider {
+    width: 400px !important;
   }
 }
 
