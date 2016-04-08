@@ -135,8 +135,8 @@ width: auto;
   height: 1.8em;
   width: 2em;
   padding-left: .3em;
-  color: red;
-  background-color: purple;
+  color: #ed3726;
+  background-color: #990099;
   margin-top: 30px;
   margin-left: .5em;
 
@@ -144,7 +144,7 @@ width: auto;
 .slider {
   width: 700px;
   height: 60px;
-    background-color: blue;
+    background-color: #668cff;
 }
 
 .slider-handle {
