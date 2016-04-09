@@ -77,7 +77,7 @@ $name4 = $_POST['name4'];
 $domain = $_POST['domain'];
 
 
-
+echo '<div class="row"><div class="large-12 columns" id="leftimg">';
 echo '<h2>Thank You!</h2>';
 echo 'Thanks ';
 echo $name;
@@ -93,7 +93,7 @@ $order=rand()*10;
 echo 'Your order number is: ';
 echo $order;
 echo '<br>Please look over your order and call us with any necessary changes.';
-
+echo '</div></div>';
 
 ?>
 <pre>
