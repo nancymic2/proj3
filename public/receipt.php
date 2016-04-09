@@ -78,7 +78,7 @@ $domain = $_POST['domain'];
 
 
 echo '<div class="row"><div class="large-12 columns" id="leftimg">';
-echo '<h2>Thank You!</h2>';
+echo '<h2>Thank You for Your Order!</h2>';
 echo 'Thanks ';
 echo $name;
 echo '<br>You have placed an order for a webstory for ';
