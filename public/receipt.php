@@ -74,6 +74,7 @@ $name1 = $_POST['name1'];
 $name2 = $_POST['name2'];
 $name3 = $_POST['name3'];
 $name4 = $_POST['name4'];
+$domain = $_POST['domain'];
 
 
 
@@ -86,6 +87,7 @@ echo ' children. <br>Their names are ';
 echo $name1.', '.$name2.', '.$name3.', '.$name4;
 
 echo '<br>';
+echo 'You woud like the site to be named '.$domain;
 $order=rand()*10;
 echo 'your order number is ';
 echo $order;
