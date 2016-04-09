@@ -88,6 +88,7 @@ echo $name1.', '.$name2.', '.$name3.', '.$name4;
 
 echo '<br>';
 echo 'You woud like the site to be named '.$domain;
+echo '<br>';
 $order=rand()*10;
 echo 'your order number is ';
 echo $order;
