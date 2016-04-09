@@ -83,15 +83,16 @@ echo 'Thanks ';
 echo $name;
 echo '<br>You have placed an order for a webstory for ';
 echo $num;
-echo ' children. <br>Their names are ';
+echo ' children. <br>Their names are: ';
 echo $name1.', '.$name2.', '.$name3.', '.$name4;
 
 echo '<br>';
 echo 'You woud like the site to be named '.$domain;
 echo '<br>';
 $order=rand()*10;
-echo 'your order number is ';
+echo 'Your order number is: ';
 echo $order;
+echo '<br>Please look over your order and call us with any necessary changes.';
 
 
 ?>
