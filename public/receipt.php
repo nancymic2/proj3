@@ -69,11 +69,22 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$num = $_POST['num_children'];
+$name1 = $_POST['name1'];
+$name2 = $_POST['name2'];
+$name3 = $_POST['name3'];
+$name4 = $_POST['name4'];
+
+
 
 echo '<h2>Thank You!</h2>';
 echo 'Thanks ';
 echo $name;
-echo $email;
+echo '<br>You have placed an order for a webstory for ';
+echo $num;
+echo ' children. <br>Their names are ';
+echo $name1.', '.$name2.', '.$name3.', '.$name4;
+
 echo '<br>';
 $order=rand()*10;
 echo 'your order number is ';
