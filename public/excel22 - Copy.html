@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What is This?</title>
+                    <!-- <link rel="stylesheet" href="css/foundation.css">-->
+        <link rel="stylesheet" href="css/app.css">
+                <link rel="stylesheet" href="css/excel.css">
+                        
+    </head>
+<body>
+<div class="normal">   
+<table>
+    <tr>
+    <td>System Memory</td>
+    <td><input class="field" id="mem" value="64" type="text"></td>
+    <td>Number of Compute Nodes</td>
+    <td><input class="field" id="one" type="text" value="100"></td>
+    <td>Number of VMs Per Node</td>
+    <td><input class="field" id="two" type="text" value="40"></td>
+    <td><a href="#" onclick="getSum();"><input type="button" value="get Sum"></a></td>
+    <td><input class="field" id="total" type="text"></td>
+    </tr>
+
+        <tr>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+    </tr>
+
+</table>
+
+<!-- ///////////////////////////////////  -->
+
+<table>
+<tr>
+<td>Component</td>
+<td>Number of Services</td>
+<td>Retention Period</td>
+</tr>
+    <tr>
+    <td>Vertica</td>
+    <td><input class="field" id="mem" value="BLANK" type="text"></td>
+    <td><input class="field" id="one" type="text" value="45"></td>
+
+    </tr>
+
+         <tr>
+    <td>logging</td>
+    <td><input class="field" id="mem" value="22" type="text"></td>
+    <td><input class="field" id="one" type="text" value="7"></td>
+    </tr>
+
+         <tr>
+    <td>MESSAGE queue</td>
+    <td><input class="field" id="mem" value="BLANK" type="text"></td>
+    <td><input class="field" id="one" type="text" value="0.17"></td>
+    </tr>
+
+
+         <tr>
+    <td>log storage</td>
+    <td><input class="field" id="mem" value="BLANK" type="text"></td>
+    <td><input class="field" id="one" type="text" value="7"></td>
+    </tr>
+         <tr>
+    <td>Audit</td>
+    <td><input class="field" id="mem" value="BLANK" type="text"></td>
+    <td><input class="field" id="one" type="text" value="0"></td>
+    </tr>
+
+
+        <tr>
+<td>......</td>
+<td>......</td>
+<td>......</td>
+
+    </tr>
+
+</table>
+
+<h4>Number of services in cluster</h4>
+<table>
+<tr>
+<td>API/Core</td>
+<td>Networking</td>
+<td>Swift</td>
+<td>MMLB</td>
+<td>MySQL/RabbitMQ</td>
+</tr>
+    <tr>
+
+    <td><input class="field" id="mem" value="13" type="text"></td>
+    <td><input class="field" id="one" type="text" value="10"></td>
+        <td><input class="field" id="one" type="text" value="10"></td>
+            <td><input class="field" id="one" type="text" value="9"></td>
+                <td><input class="field" id="one" type="text" value="6"></td>
+
+    </tr>
+</table>
+
+
+<table> <tr>  <td></td>  <td></td>  <td></td>  <td>  API/Core Services  </td>  <td>  Networking (Neutron)  </td>  <td>  Swift  </td>  <td>  MMLB  </td>  <td>  MySQL/RabbitMQ  </td> </tr>
+
+
+<tr>  <td></td>  <td></td>  <td>  number of services on cluster  </td>  <td><input class="field" id="mem" value="13" type="text"></td>  <td><input class="field" id="one" type="text" value="10"></td>    <td><input class="field" id="one" type="text" value="10"></td> 
+     <td><input class="field" id="one" type="text" value="9"></td>  <td><input class="field" id="one" type="text" value="6"></td>  <td>    </td>  <td>  &nbsp;  </td>  <td>    </td> </tr>
+
+
+<tr>  <td>  Filesystem  </td>  <td>  used by  </td>  <td>  subcomponents  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td> </tr>
+
+
+<tr>  <td>  /  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  60  </td> </tr>
+
+
+<tr>  <td>  /var/crash  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  64  </td> </tr>
+
+
+<tr>  <td>  /var/log  </td>  <td>  logging  </td>  <td>  &nbsp;  </td>  <td>  92  </td>  <td>  71  </td>  <td>  71  </td>  <td>  64  </td><td>  42  </td> </tr>
+
+
+<tr>  <td>  /var/lib/mysql  </td>  <td>  monitoring, core services  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td><td>  60  </td> </tr>
+
+
+<tr>  <td>  /var/lib/rabbitmq  </td>  <td>  logging, core services  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td><td>   26  </td> </tr>
+
+
+<tr>  <td>  /var/vertica  </td>  <td>  MM  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>   187  </td><td>  0  </td> </tr>
+
+
+<tr>  <td>  /var/kafka  </td>  <td>  MML  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  67  </td><td>  0  </td> </tr>
+
+
+<tr>  <td>  /var/lib/elasticsearch  </td>  <td>  LB  </td>  <td>  &nbsp;  </td>  <td>   0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  130  </td><td>  0  </td> </tr>
+
+
+<tr>  <td>  /var/lib/zookeeper  </td>  <td>  monitoring, logging, metering  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>   1  </td><td>  0  </td> </tr>
+
+
+<tr>  <td>  /var/audit  </td>  <td>  logging  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td><td>     </td> </tr>
+
+
+<tr>  <td>  /var/lib/glance/work_dir  </td>  <td>  glance  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td><td>  0  </td> </tr>
+
+</table>
+
+
+   </div>
+   <script>
+   function getSum() {
+    var one=parseInt(document.getElementById('one').value);
+    var two=parseInt(document.getElementById('two').value);
+    var tot=one+two;
+    document.getElementById('total').value=tot;
+   }
+   </script>
+</body>
+</html>
