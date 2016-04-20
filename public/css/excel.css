@@ -1,0 +1,28 @@
+.normal {
+	font-size: .4em;
+	color: black;
+	width: 1000px;
+	background-color: #aaaaaa;
+	margin-left: 100px;
+	margin-top: 60px;
+	padding-right: 30px;
+}
+
+.field {
+	width: 70px;
+	text-align: right;
+	padding-left: -40px;
+}
+
+.right {
+	margin-left: 120px;
+}
+
+table {
+	font-weight: bold;
+}
+
+
+td {
+	text-align: right;
+}
