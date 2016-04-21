@@ -134,7 +134,7 @@
 </head>
 
 <body onload='wwsInit();'>
-<div style="border: 1px solid black; width: 914px; margin-left: 60px;">
+<div style="border: 1px solid black; width: 909px; margin-left: 60px;">
 <!--<center>-->
 
 <form name='worksheet' action='' enctype='multipart/form-data'>
@@ -201,7 +201,7 @@
 
 <tr id='ROW3' syle='height:58px;'>
 <!--<td id='A3' class='A3' category='general'></td>-->
-<td id='B3' class='B3' category='general'>system memory</td>
+<td id='B3' class='B3' category='general'>system<br> memory</td>
 <td id='C3' class='B3' category='general'>number of <br>compute nodes</td>
 <td id='D3' class='B3' category='general'>number of VMs per compute node</td>
 <td id='E3' class='hidden' category='general'></td>
@@ -391,8 +391,8 @@
 <td id='S11' class='hidden' category='general'></td></tr>
 
 <tr id='ROW12' syle='height:27px; background: #aadd77; border: 1px solid black;'>
-<td id='A12' class='A12' category='general'><span syle="font-size: 1.2em;"></span></td>
-<td id='B12' class='B1' colspan="2" category='general'><b>Number of services on cluster</b></td>
+<td id='A12' class='A12' category='general'><span syle="font-size: 1.2em;"><b>Number of services on cluster</b> </span></td>
+<td id='B12' class='B1' colspan="2" category='general'> </td>
 <!--<td id='C12' class='C12' category='general'></td>-->
 <td id='D12' class='D12' category='general' data-cval=''>
    <input id='iD12' type='text' class='Text iD12' onChange='return calculate("D12")' onfocus='return hilite(this.id);' onKeyDown='return enterKeyIsTab(event);' data-default='13' /></td>
@@ -430,13 +430,13 @@
 <td id='J13' class='H10' category='general'></td>
 <td id='K13' class='hidden' category='general'></td>
 <td id='L13' class='L13' category='general'></td>
-<td id='M13' class='hidden' category='general'></td>
-<td id='N13' class='hidden' category='general'>base requirement</td>
-<td id='O13' class='hidden' category='general'>Compute Node</td>
-<td id='P13' class='hidden' category='general'>Virtual Machines per Compute Node</td>
-<td id='Q13' class='hidden' category='general'>Service</td>
-<td id='R13' class='hidden' category='general'>System Memory</td>
-<td id='S13' class='hidden' category='general'>Comments</td></tr>
+<td id='M13' class='hidden' category='general' style="display: none;"></td>
+<td id='N13' class='hidden' category='general' style="display: none;">base requirement</td>
+<td id='O13' class='hidden' category='general' style="display: none;">Compute Node</td>
+<td id='P13' class='hidden' category='general' style="display: none;">Virtual Machines per Compute Node</td>
+<td id='Q13' class='hidden' category='general' style="display: none;">Service</td>
+<td id='R13' class='hidden' category='general' style="display: none;">System <br>Memory</td>
+<td id='S13' class='hidden' category='general' style="display: none;">Comments</td></tr>
 
 <tr id='ROW14' syle='height:19px;'>
 <td id='A14' class='N3' category='general'>/</td>
@@ -452,13 +452,13 @@
 <td id='B15' class='N3' category='general'></td>
 <td id='C15' class='N3' category='general'></td>
 <td id='D15' colspan=9 class='D14' category='number' format='0'></td>
-<td id='M15' class='hidden' category='general'></td>
-<td id='N15' class='hidden' category='general'></td>
-<td id='O15' class='hidden' category='general'></td>
-<td id='P15' class='hidden' category='general'></td>
-<td id='Q15' class='hidden' category='general'></td>
-<td id='R15' class='hidden' category='general'>1</td>
-<td id='S15' class='hidden' category='general'> </td></tr>
+<td id='M15' class='hidden' category='general' style="display: none;"></td>
+<td id='N15' class='hidden' category='general' style="display: none;"></td>
+<td id='O15' class='hidden' category='general' style="display: none;"></td>
+<td id='P15' class='hidden' category='general' style="display: none;"></td>
+<td id='Q15' class='hidden' category='general' style="display: none;"></td>
+<td id='R15' class='hidden' category='general' style="display: none;">1</td>
+<td id='S15' class='hidden' category='general'  style="display: none;"> </td></tr>
 
 <tr id='ROW16' style='height:19px;'>
 <td id='A16' class='N3' category='general'>/var/log</td>
@@ -469,13 +469,13 @@
 <td id='H16' colspan=2 class='D16' category='number' format='0'></td>
 <td id='J16' colspan=2 class='D16' category='number' format='0'></td>
 <td id='L16' class='D16' category='number' format='0'></td>
-<td id='M16' class='hidden' category='general'></td>
-<td id='N16' class='hidden' category='general'></td>
-<td id='O16' class='hidden' category='general'>0.2</td>
-<td id='P16' class='hidden' category='general'></td>
-<td id='Q16' class='hidden' category='general'>0.1</td>
-<td id='R16' class='hidden' category='general'> </td>
-<td id='S16' class='hidden' category='general'> </td></tr>
+<td id='M16' class='hidden' category='general' style="display: none;"></td>
+<td id='N16' class='hidden' category='general' style="display: none;"></td>
+<td id='O16' class='hidden' category='general' style="display: none;">0.2</td>
+<td id='P16' class='hidden' category='general' style="display: none;"></td>
+<td id='Q16' class='hidden' category='general' style="display: none;">0.1</td>
+<td id='R16' class='hidden' category='general' style="display: none;"> </td>
+<td id='S16' class='hidden' category='general' style="display: none;"> </td></tr>
 
 <tr id='ROW17' style='height:27px;  background: #ffffff;'>
 <td id='A17' class='N3' category='general'>/var/lib/mysql</td>
@@ -486,13 +486,13 @@
 <td id='H17' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J17' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='L17' class='D16' category='number' format='0' data-cval='60'>60</td>
-<td id='M17' class='hidden' category='general'></td>
-<td id='N17' class='hidden' category='general'></td>
-<td id='O17' class='hidden' category='general'>x</td>
-<td id='P17' class='hidden' category='general'></td>
-<td id='Q17' class='hidden' category='general'>x</td>
-<td id='R17' class='hidden' category='general'></td>
-<td id='S17' class='hidden' category='general'>current default value </td></tr>
+<td id='M17' class='hidden' category='general' style="display: none;"></td>
+<td id='N17' class='hidden' category='general' style="display: none;"></td>
+<td id='O17' class='hidden' category='general' style="display: none;">x</td>
+<td id='P17' class='hidden' category='general' style="display: none;"></td>
+<td id='Q17' class='hidden' category='general' style="display: none;">x</td>
+<td id='R17' class='hidden' category='general' style="display: none;"></td>
+<td id='S17' class='hidden' category='general' style="display: none;">current default value </td></tr>
 
 <tr id='ROW18' syle='height:38px;'>
 <td id='A18' class='N3' category='general'>/var/lib/rabbitmq</td>
@@ -503,13 +503,13 @@
 <td id='H18' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J18' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='L18' class='L18' category='number' format='0'></td>
-<td id='M18' class='hidden' category='general'></td>
-<td id='N18' class='hidden' category='general'></td>
-<td id='O18' class='hidden' category='general'> </td>
-<td id='P18' class='hidden' category='general'></td>
-<td id='Q18' class='hidden' category='general'> </td>
-<td id='R18' class='hidden' category='general'>0.4</td>
-<td id='S18' class='hidden' category='general'> </td></tr>
+<td id='M18' class='hidden' category='general' style="display: none;"></td>
+<td id='N18' class='hidden' category='general' style="display: none;"></td>
+<td id='O18' class='hidden' category='general' style="display: none;"> </td>
+<td id='P18' class='hidden' category='general' style="display: none;"></td>
+<td id='Q18' class='hidden' category='general' style="display: none;"> </td>
+<td id='R18' class='hidden' category='general' style="display: none;">0.4</td>
+<td id='S18' class='hidden' category='general' style="display: none;"> </td></tr>
 
 <tr id='ROW19' style='height:19px;  background: #ffffff;'>
 <td id='A19' class='N3' category='general'>/var/vertica</td>
@@ -520,13 +520,13 @@
 <td id='H19' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J19' colspan=2 class='J19' category='number' format='0'></td>
 <td id='L19' class='N3' category='number' format='0' data-cval='0'>0</td>
-<td id='M19' class='hidden' category='general'></td>
-<td id='N19' class='hidden' category='general'></td>
-<td id='O19' class='hidden' category='general'></td>
-<td id='P19' class='hidden' category='general'></td>
-<td id='Q19' class='hidden' category='general'>0</td>
-<td id='R19' class='hidden' category='general'></td>
-<td id='S19' class='hidden' category='general'></td></tr>
+<td id='M19' class='hidden' category='general' style="display: none;"></td>
+<td id='N19' class='hidden' category='general' style="display: none;"></td>
+<td id='O19' class='hidden' category='general' style="display: none;"></td>
+<td id='P19' class='hidden' category='general' style="display: none;"></td>
+<td id='Q19' class='hidden' category='general' style="display: none;">0</td>
+<td id='R19' class='hidden' category='general' style="display: none;"></td>
+<td id='S19' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW20' syle='height:19px;'>
 <td id='A20' class='N3' category='general'>/var/kafka</td>
@@ -537,13 +537,13 @@
 <td id='H20' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J20' colspan=2 class='J19' category='number' format='0'></td>
 <td id='L20' class='N3' category='number' format='0' data-cval='0'>0</td>
-<td id='M20' class='hidden' category='general'></td>
-<td id='N20' class='hidden' category='general'></td>
-<td id='O20' class='hidden' category='general'></td>
-<td id='P20' class='hidden' category='general'></td>
-<td id='Q20' class='hidden' category='general'></td>
-<td id='R20' class='hidden' category='general'></td>
-<td id='S20' class='hidden' category='general'></td></tr>
+<td id='M20' class='hidden' category='general' style="display: none;"></td>
+<td id='N20' class='hidden' category='general' style="display: none;"></td>
+<td id='O20' class='hidden' category='general' style="display: none;"></td>
+<td id='P20' class='hidden' category='general' style="display: none;"></td>
+<td id='Q20' class='hidden' category='general' style="display: none;"></td>
+<td id='R20' class='hidden' category='general' style="display: none;"></td>
+<td id='S20' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW21' style='height:38px;  display: none; background: #ffffff;'>
 <td id='A21' class='N3' category='general'>&#160;</td>
@@ -557,13 +557,13 @@
 <td id='I21' class='N3' category='number' format='0'></td>
 <td id='J21' colspan=2 class='N3' category='number' format='0'></td>
 <td id='L21' class='N3' category='number' format='0'></td>
-<td id='M21' class='hidden' category='general'></td>
-<td id='N21' class='hidden' category='general'></td>
-<td id='O21' class='hidden' category='general'></td>
-<td id='P21' class='hidden' category='general'></td>
-<td id='Q21' class='hidden' category='general'>0</td>
-<td id='R21' class='hidden' category='general'> </td>
-<td id='S21' class='hidden' category='general'>1.3</td></tr> 
+<td id='M21' class='hidden' category='general' style="display: none;"></td>
+<td id='N21' class='hidden' category='general' style="display: none;"></td>
+<td id='O21' class='hidden' category='general' style="display: none;"></td>
+<td id='P21' class='hidden' category='general' style="display: none;"></td>
+<td id='Q21' class='hidden' category='general' style="display: none;">0</td>
+<td id='R21' class='hidden' category='general' style="display: none;"> </td>
+<td id='S21' class='hidden' category='general' style="display: none;">1.3</td></tr> 
 
 <tr id='ROW22' style='height:19px; display:none;'>
 <td id='A22' class='N3' category='general'>&#160;</td>
@@ -577,13 +577,13 @@
 <td id='I22' class='N3' category='number' format='0'></td>
 <td id='J22' colspan=2 class='N3' category='number' format='0'></td>
 <td id='L22' class='N3' category='number' format='0'></td>
-<td id='M22' class='hidden' category='general'></td>
-<td id='N22' class='hidden' category='general'>0</td>
-<td id='O22' class='hidden' category='general'>0.4</td>
-<td id='P22' class='hidden' category='general'>0</td>
-<td id='Q22' class='hidden' category='general'>0.2</td>
-<td id='R22' class='hidden' category='general'> </td>
-<td id='S22' class='hidden' category='general'></td></tr> 
+<td id='M22' class='hidden' category='general' style="display: none;"></td>
+<td id='N22' class='hidden' category='general' style="display: none;">0</td>
+<td id='O22' class='hidden' category='general' style="display: none;">0.4</td>
+<td id='P22' class='hidden' category='general' style="display: none;">0</td>
+<td id='Q22' class='hidden' category='general' style="display: none;">0.2</td>
+<td id='R22' class='hidden' category='general' style="display: none;"> </td>
+<td id='S22' class='hidden' category='general' style="display: none;"></td></tr> 
 
 <tr id='ROW23' style='height:19px;  background: #ffffff;'>
 <td id='A23' class='N3' category='general'>/var/lib/elasticsearch</td>
@@ -594,13 +594,13 @@
 <td id='H23' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J23' colspan=2 class='J19' category='number' format='0'></td>
 <td id='L23' class='N3' category='number' format='0' data-cval='0'>0</td>
-<td id='M23' class='hidden' category='general'></td>
-<td id='N23' class='hidden' category='general'></td>
-<td id='O23' class='hidden' category='number' format='0.00'></td>
-<td id='P23' class='hidden' category='number' format='0.00'></td>
-<td id='Q23' class='hidden' category='number' format='0.00'></td>
-<td id='R23' class='hidden' category='number' format='0'></td>
-<td id='S23' class='hidden' category='number' format='0.00'></td></tr>
+<td id='M23' class='hidden' category='general' style="display: none;"></td>
+<td id='N23' class='hidden' category='general' style="display: none;"></td>
+<td id='O23' class='hidden' category='number' format='0.00' style="display: none;"></td>
+<td id='P23' class='hidden' category='number' format='0.00' style="display: none;"></td>
+<td id='Q23' class='hidden' category='number' format='0.00' style="display: none;"></td>
+<td id='R23' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='S23' class='hidden' category='number' format='0.00' style="display: none;"></td></tr>
 
 <tr id='ROW24' style='height:19px; display:none;'>
 <td id='A24' class='N3' category='general'></td>
@@ -614,13 +614,13 @@
 <td id='I24' class='N3' category='number' format='0'></td>
 <td id='J24' colspan=2 class='N3' category='number' format='0'></td>
 <td id='L24' class='N3' category='number' format='0'></td>
-<td id='M24' class='hidden' category='general'></td>
-<td id='N24' class='hidden' category='general'></td>
-<td id='O24' class='hidden' category='general'>0.15</td>
-<td id='P24' class='hidden' category='general'></td>
-<td id='Q24' class='hidden' category='general'>0.1</td>
-<td id='R24' class='hidden' category='general'> </td>
-<td id='S24' class='hidden' category='general'> </td></tr>
+<td id='M24' class='hidden' category='general' style="display: none;"></td>
+<td id='N24' class='hidden' category='general' style="display: none;"></td>
+<td id='O24' class='hidden' category='general' style="display: none;">0.15</td>
+<td id='P24' class='hidden' category='general' style="display: none;"></td>
+<td id='Q24' class='hidden' category='general' style="display: none;">0.1</td>
+<td id='R24' class='hidden' category='general' style="display: none;"> </td>
+<td id='S24' class='hidden' category='general' style="display: none;"> </td></tr>
 
 <tr id='ROW25' style='height:19px; background: #ffffff; display: none;'>
 <td id='A25' class='N3' category='general'>&#160;</td>
@@ -634,13 +634,13 @@
 <td id='I25' class='N3' category='number' format='0'></td>
 <td id='J25' colspan=2 class='N3' category='number' format='0'></td>
 <td id='L25' class='N3' category='number' format='0'></td>
-<td id='M25' class='hidden' category='general'></td>
-<td id='N25' class='hidden' category='general'>10</td>
-<td id='O25' class='hidden' category='general'></td>
-<td id='P25' class='hidden' category='general'></td>
-<td id='Q25' class='hidden' category='general'></td>
-<td id='R25' class='hidden' category='general'></td>
-<td id='S25' class='hidden' category='general'></td></tr>
+<td id='M25' class='hidden' category='general' style="display: none;"></td>
+<td id='N25' class='hidden' category='general' style="display: none;">10</td>
+<td id='O25' class='hidden' category='general' style="display: none;"></td>
+<td id='P25' class='hidden' category='general' style="display: none;"></td>
+<td id='Q25' class='hidden' category='general' style="display: none;"></td>
+<td id='R25' class='hidden' category='general' style="display: none;"></td>
+<td id='S25' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW26' syle='height:27px;'>
 <td id='A26' class='N3' category='general'>/var/lib/zookeeper</td>
@@ -651,13 +651,13 @@
 <td id='H26' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J26' colspan=2 class='J19' category='number' format='0'></td>
 <td id='L26' class='N3' category='number' format='0' data-cval='0'>0</td>
-<td id='M26' class='hidden' category='general'></td>
-<td id='N26' class='hidden' category='general'>1</td>
-<td id='O26' class='hidden' category='general'></td>
-<td id='P26' class='hidden' category='general'></td>
-<td id='Q26' class='hidden' category='general'></td>
-<td id='R26' class='hidden' category='general'></td>
-<td id='S26' class='hidden' category='general'></td></tr>
+<td id='M26' class='hidden' category='general' style="display: none;"></td>
+<td id='N26' class='hidden' category='general' style="display: none;">1</td>
+<td id='O26' class='hidden' category='general' style="display: none;"></td>
+<td id='P26' class='hidden' category='general' style="display: none;"></td>
+<td id='Q26' class='hidden' category='general' style="display: none;"></td>
+<td id='R26' class='hidden' category='general' style="display: none;"></td>
+<td id='S26' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW27' style='height:27px; background: #ffffff;'>
 <td id='A27' class='N3' category='general'>/var/audit</td>
@@ -668,13 +668,13 @@
 <td id='H27' colspan=2 class='D16' category='number' format='0' data-cval='0'>0</td>
 <td id='J27' colspan=2 class='D16' category='number' format='0' data-cval='0'>0</td>
 <td id='L27' class='N3' category='number' format='0' data-cval=' '> </td>
-<td id='M27' class='hidden' category='general'></td>
-<td id='N27' class='hidden' category='general'> </td>
-<td id='O27' class='hidden' category='general'>x</td>
-<td id='P27' class='hidden' category='general'></td>
-<td id='Q27' class='hidden' category='general'>x</td>
-<td id='R27' class='hidden' category='general'> </td>
-<td id='S27' class='hidden' category='general'>disabled by default</td></tr>
+<td id='M27' class='hidden' category='general' style="display: none;"></td>
+<td id='N27' class='hidden' category='general' style="display: none;"> </td>
+<td id='O27' class='hidden' category='general' style="display: none;">x</td>
+<td id='P27' class='hidden' category='general' style="display: none;"></td>
+<td id='Q27' class='hidden' category='general' style="display: none;">x</td>
+<td id='R27' class='hidden' category='general' style="display: none;"> </td>
+<td id='S27' class='hidden' category='general' style="display: none;">disabled by default</td></tr>
 
 <tr id='ROW28' syle='height:19px;'>
 <td id='A28' class='N3' category='general'>/var/lib/glance/work_dir</td>
@@ -685,13 +685,13 @@
 <td id='H28' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='J28' colspan=2 class='N3' category='number' format='0' data-cval='0'>0</td>
 <td id='L28' class='N3' category='number' format='0' data-cval='0'>0</td>
-<td id='M28' class='hidden' category='general'></td>
-<td id='N28' class='hidden' category='general'>0</td>
-<td id='O28' class='hidden' category='general'></td>
-<td id='P28' class='hidden' category='general'></td>
-<td id='Q28' class='hidden' category='general'></td>
-<td id='R28' class='hidden' category='general'></td>
-<td id='S28' class='hidden' category='general'>disabled by default</td></tr>
+<td id='M28' class='hidden' category='general' style="display: none;"></td>
+<td id='N28' class='hidden' category='general' style="display: none;">0</td>
+<td id='O28' class='hidden' category='general' style="display: none;"></td>
+<td id='P28' class='hidden' category='general' style="display: none;"></td>
+<td id='Q28' class='hidden' category='general' style="display: none;"></td>
+<td id='R28' class='hidden' category='general' style="display: none;"></td>
+<td id='S28' class='hidden' category='general' style="display: none;">disabled by default</td></tr>
 
 <tr id='ROW29' style='height:19px; display: none;'>
 <td id='A29' class='O9' category='general'></td>
@@ -706,26 +706,26 @@
 <td id='J29' class='O9' category='general'></td>
 <td id='K29' class='hidden' category='general'></td>
 <td id='L29' class='O9' category='general'></td>
-<td id='M29' class='hidden' category='general'></td>
-<td id='N29' class='hidden' category='general'></td>
-<td id='O29' class='hidden' category='general'></td>
-<td id='P29' class='hidden' category='general'></td>
-<td id='Q29' class='hidden' category='general'></td>
-<td id='R29' class='hidden' category='general'></td>
-<td id='S29' class='hidden' category='general'></td></tr>
+<td id='M29' class='hidden' category='general' style="display: none;"></td>
+<td id='N29' class='hidden' category='general' style="display: none;"></td>
+<td id='O29' class='hidden' category='general' style="display: none;"></td>
+<td id='P29' class='hidden' category='general' style="display: none;"></td>
+<td id='Q29' class='hidden' category='general' style="display: none;"></td>
+<td id='R29' class='hidden' category='general' style="display: none;"></td>
+<td id='S29' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW30' style='height:19px; background: #33cccc;'>
 <td id='A30' class='A30' category='general'></td>
 <td id='B30' class='M1' category='general'></td>
 <td id='C30' class='A1' category='general'>Entry Scale</td>
 <td id='D30' colspan=9 class='D30' category='number' format='0'></td>
-<td id='M30' class='hidden' category='number' format='0'></td>
-<td id='N30' class='hidden' category='general'></td>
-<td id='O30' class='hidden' category='general'></td>
-<td id='P30' class='hidden' category='general'></td>
-<td id='Q30' class='hidden' category='general'></td>
-<td id='R30' class='hidden' category='general'></td>
-<td id='S30' class='hidden' category='general'></td></tr>
+<td id='M30' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='N30' class='hidden' category='general' style="display: none;"></td>
+<td id='O30' class='hidden' category='general' style="display: none;"></td>
+<td id='P30' class='hidden' category='general' style="display: none;"></td>
+<td id='Q30' class='hidden' category='general' style="display: none;"></td>
+<td id='R30' class='hidden' category='general' style="display: none;"></td>
+<td id='S30' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW31' syle='height:10px;'>
 <td id='A31' class='A30' category='general'></td>
@@ -740,13 +740,13 @@
 <td id='J31' class='C7' category='number' format='0'></td>
 <td id='K31' class='hidden' category='number' format='0'></td>
 <td id='L31' class='C7' category='number' format='0'></td>
-<td id='M31' class='hidden' category='number' format='0'></td>
-<td id='N31' class='hidden' category='general'></td>
-<td id='O31' class='hidden' category='general'></td>
-<td id='P31' class='hidden' category='general'></td>
-<td id='Q31' class='hidden' category='general'></td>
-<td id='R31' class='hidden' category='general'></td>
-<td id='S31' class='hidden' category='general'></td></tr>
+<td id='M31' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='N31' class='hidden' category='general' style="display: none;"></td>
+<td id='O31' class='hidden' category='general' style="display: none;"></td>
+<td id='P31' class='hidden' category='general' style="display: none;"></td>
+<td id='Q31' class='hidden' category='general' style="display: none;"></td>
+<td id='R31' class='hidden' category='general' style="display: none;"></td>
+<td id='S31' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW32' style='height:19px; background: #ff9966;'>
 <td id='A32' class='A30' category='general'></td>
@@ -757,13 +757,13 @@
 <td id='J32' class='D30' category='number' format='0'></td>
 <td id='K32' class='hidden' category='number' format='0'></td>
 <td id='L32' class='D30' category='number' format='0'></td>
-<td id='M32' class='hidden' category='number' format='0'></td>
-<td id='N32' class='hidden' category='general'></td>
-<td id='O32' class='hidden' category='general'></td>
-<td id='P32' class='hidden' category='general'></td>
-<td id='Q32' class='hidden' category='general'></td>
-<td id='R32' class='hidden' category='general'></td>
-<td id='S32' class='hidden' category='general'></td></tr>
+<td id='M32' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='N32' class='hidden' category='general' style="display: none;"></td>
+<td id='O32' class='hidden' category='general' style="display: none;"></td>
+<td id='P32' class='hidden' category='general' style="display: none;"></td>
+<td id='Q32' class='hidden' category='general' style="display: none;"></td>
+<td id='R32' class='hidden' category='general' style="display: none;"></td>
+<td id='S32' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW33' syle='height:10px;'>
 <td id='A33' class='A30' category='general'></td>
@@ -778,15 +778,15 @@
 <td id='J33' class='C7' category='number' format='0'></td>
 <td id='K33' class='hidden' category='number' format='0'></td>
 <td id='L33' class='D31' category='number' format='0'></td>
-<td id='M33' class='hidden' category='number' format='0'></td>
-<td id='N33' class='hidden' category='general'></td>
-<td id='O33' class='hidden' category='general'></td>
-<td id='P33' class='hidden' category='general'></td>
-<td id='Q33' class='hidden' category='general'></td>
-<td id='R33' class='hidden' category='general'></td>
-<td id='S33' class='hidden' category='general'></td></tr>
+<td id='M33' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='N33' class='hidden' category='general' style="display: none;"></td>
+<td id='O33' class='hidden' category='general' style="display: none;"></td>
+<td id='P33' class='hidden' category='general' style="display: none;"></td>
+<td id='Q33' class='hidden' category='general' style="display: none;"></td>
+<td id='R33' class='hidden' category='general' style="display: none;"></td>
+<td id='S33' class='hidden' category='general' style="display: none;"></td></tr>
 
-<tr id='ROW34' style='height:19px; background: #aaff99;'>
+<tr id='ROW34' style='height:19px; background: #33cccc;'>
 <td id='A34' class='A30' category='general'></td>
 <td id='B34' class='M1' category='general'></td>
 <td id='C34' class='A1' category='general'>Mid Scale</td>
@@ -799,13 +799,13 @@
 <td id='J34' class='D30' category='number' format='0'></td>
 <td id='K34' class='hidden' category='number' format='0'></td>
 <td id='L34' class='D30' category='number' format='0'></td>
-<td id='M34' class='hidden' category='number' format='0'></td>
-<td id='N34' class='hidden' category='general'></td>
-<td id='O34' class='hidden' category='general'></td>
-<td id='P34' class='hidden' category='general'></td>
-<td id='Q34' class='hidden' category='general'></td>
-<td id='R34' class='hidden' category='general'></td>
-<td id='S34' class='hidden' category='general'></td></tr>
+<td id='M34' class='hidden' category='number' format='0' style="display: none;"></td>
+<td id='N34' class='hidden' category='general' style="display: none;"></td>
+<td id='O34' class='hidden' category='general' style="display: none;"></td>
+<td id='P34' class='hidden' category='general' style="display: none;"></td>
+<td id='Q34' class='hidden' category='general' style="display: none;"></td>
+<td id='R34' class='hidden' category='general' style="display: none;"></td>
+<td id='S34' class='hidden' category='general' style="display: none;"></td></tr>
 
 <tr id='ROW35' syle='height:19px;'>
 <td id='A35' class='M1' category='general'></td>
@@ -820,13 +820,13 @@
 <td id='J35' class='M1' category='general'></td>
 <td id='K35' class='hidden' category='general'></td>
 <td id='L35' class='M1' category='general'></td>
-<td id='M35' class='hidden' category='general'></td>
-<td id='N35' class='hidden' category='general'></td>
-<td id='O35' class='hidden' category='general'></td>
-<td id='P35' class='hidden' category='general'></td>
-<td id='Q35' class='hidden' category='general'></td>
-<td id='R35' class='hidden' category='general'></td>
-<td id='S35' class='hidden' category='general'></td></tr></table>
+<td id='M35' class='hidden' category='general' style="display: none;"></td>
+<td id='N35' class='hidden' category='general' style="display: none;"></td>
+<td id='O35' class='hidden' category='general' style="display: none;"></td>
+<td id='P35' class='hidden' category='general' style="display: none;"></td>
+<td id='Q35' class='hidden' category='general' style="display: none;"></td>
+<td id='R35' class='hidden' category='general' style="display: none;"></td>
+<td id='S35' class='hidden' category='general' style="display: none;"></td></tr></table>
 
 </form>
 </div>
