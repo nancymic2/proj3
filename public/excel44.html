@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What is This?</title>
+                    <!-- <link rel="stylesheet" href="css/foundation.css">-->
+        <link rel="stylesheet" href="css/app.css">
+         <link rel="stylesheet" href="css/excel.css">
+
+         <script src="js/numbers.js"></script>
+
+                <script>
+                    window.onload=function(){
+
+                     var allfields=document.getElementsByClassName("field");
+                     for (var i=0; i<allfields.length; i++) {
+                        allfields[i].addEventListener('blur', calc, false);
+                     }
+
+                    };
+                </script>
+                        
+    </head>
+<body style="background-color: gray;">
+<div class="normal">   
+<table>
+    <tr>
+    <td>System Memory</td>
+    <td><input class="field" id="B4" value="64" type="text"></td>
+    <td>Number of Compute Nodes</td>
+    <td><input class="field" id="C4" type="text" value="100"></td>
+    <td>Number of VMs Per Node</td>
+    <td><input class="field" id="D4" type="text" value="40"></td>
+    <td> <!--<a href="#" onclick="getSum();"><input type="button" value="get Sum"></a> --></td>
+    <td><!--<input class="field" id="total" type="text">--></td>
+    </tr>
+
+
+
+</table>
+
+<!-- ///////////////////////////////////  -->
+
+<table style="width: 600px; float: left;">
+<tr>
+<td>Component</td>
+<td>Number of Services</td>
+<td>Retention Period</td>
+</tr>
+    <tr>
+    <td>Vertica</td>
+    <td><input class="field right" id="mem" disabled type="text"></td>
+    <td><input class="field right" id="L4" type="text" value="45"></td>
+
+    </tr>
+
+         <tr>
+    <td>logging</td>
+    <td><input class="field right" id="J5" value="22" type="text"></td>
+    <td><input class="field right" id="L5" type="text" value="7"></td>
+    </tr>
+
+         <tr>
+    <td>Message<br>queue</td>
+    <td><input class="field right" id="mem" disabled type="text"></td>
+    <td><input class="field right" id="L6" type="text" value="0.17"></td>
+    </tr>
+
+
+         <tr>
+    <td>log storage</td>
+    <td><input class="field right" id="mem" disabled type="text"></td>
+    <td><input class="field right" id="L7" type="text" value="7"></td>
+    </tr>
+         <tr>
+    <td>Audit</td>
+    <td><input class="field right" id="mem" disabled type="text"></td>
+    <td><input class="field right" id="L8" type="text" value="0"></td>
+    </tr>
+
+
+</table>
+
+
+<table style="float: left;"> <tr>  <td></td>  <td></td>  <td></td>  <td>  API/Core Services  </td>  <td>  Networking (Neutron)  </td> 
+ <td>  Swift  </td>  <td>  MMLB  </td>  <td>  MySQL/<br>RabbitMQ  </td> </tr>
+
+
+<tr>  <td></td>  <td></td>  <td>  number of services on cluster  </td>  <td><input class="field" id="D12" value="13" type="text"></td> 
+ <td><input class="field" id="F12" type="text" value="10"></td>    <td><input class="field" id="H12" type="text" value="10"></td> 
+     <td><input class="field" id="J12" type="text" value="9"></td>  <td><input class="field" id="L12" type="text" value="6"></td>  
+
+     <!--<td>    </td>  <td>  &nbsp;  </td>  <td>    </td> -->
+     </tr>
+
+
+<tr>  <td>  Filesystem  </td>  <td>  used by  </td>  <td>  subcomponents  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td> <!-- <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>-->
+ </tr>
+
+<!-- ROW 14 -->
+<tr>  <td>  /  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td colspan="5">   <input style="width: 460px;" class="field" id="D14" type="text" disabled value="60"></td>  </tr>
+
+<!-- ROW 15 -->
+<tr>  <td>  /var/crash  </td>  <td>  &nbsp;  </td>  <td>  &nbsp;  </td>  <td colspan="5">   <input style="width: 460px;" class="field" id="J15" type="text" disabled value="64"></td>  </tr>
+
+<!-- ROW 16 -->
+<tr>  <td>  /var/log  </td>  <td>  logging  </td>  <td>  &nbsp;  </td> <td><input class="field" id="D16" type="text" disabled value="92"></td>   < <td><input class="field" id="F16" type="text" disabled value="71"></td>   <td><input class="field" id="H16" type="text" disabled value="71"></td>     <td><input class="field" id="J16" type="text" disabled value="64"></td>   <td><input class="field" id="L16" type="text" disabled value="42"></td>   </tr>
+
+<!-- ROW 17 -->
+<tr>  <td>  /var/lib/mysql  </td>  <td>  monitoring, core services  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td><input class="field" id="L17" type="text" disabled value="60"></td>   </tr>
+
+<!-- ROW 18 -->
+
+<tr>  <td>  /var/lib/rabbitmq  </td>  <td>  logging, core services  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td><input class="field" id="L18" type="text" disabled value="26"></td>    </tr>
+
+<!-- ROW 19 -->
+
+<tr>  <td>  /var/vertica  </td>  <td>  MM  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td><input class="field" id="J19" type="text" disabled value="187"></td>   
+<td>  0  </td> </tr>
+
+<!-- ROW 20 -->
+
+<tr>  <td>  /var/kafka  </td>  <td>  MML  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>   <td><input class="field" id="J20" type="text" disabled value="67"></td>   
+<td>  0  </td> </tr>
+
+<!-- ROW 23 -->
+
+<tr>  <td>  /var/lib/elasticsearch  </td>  <td>  LB  </td>  <td>  &nbsp;  </td>  <td>   0  </td>  <td>  0  </td>  <td>  0  </td>
+   <td><input class="field" id="J23" type="text" disabled value="130"></td>     <td>  0  </td> </tr>
+
+<!-- ROW 26 -->
+
+<tr>  <td>  /var/lib/zookeeper  </td>  <td>  monitoring, logging, metering  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>   <td><input class="field" id="J26" type="text" disabled value="1"></td>     <td>  0  </td> </tr>
+
+<!-- ROW 27 -->
+
+<tr>  <td>  /var/audit  </td>  <td>  logging  </td>  <td>  &nbsp;  </td>   <td><input class="field" id="D27" type="text" disabled value="0"></td>    <td><input class="field" id="F27" type="text" disabled value="0"></td>    <td><input class="field" id="H27" type="text" disabled value="0"></td>     <td><input class="field" id="J27" type="text" disabled value="0"></td>   <td>     </td> </tr>
+
+<!-- ROW 28 -->
+
+<tr>  <td>  /var/lib/glance/work_dir  </td>  <td>  glance  </td>  <td>  &nbsp;  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td>  <td>  0  </td><td>  0  </td> </tr>
+
+<tr>  <td> &nbsp;  </td>  <td>  &nbsp;  </td>  <td> Entry scale  </td>  <td colspan="5"> <input class="field" id="D30" type="text" disabled style="width: 460px;" value="750"></td>  
+<!--<td>  &nbsp;   </td>  <td>  &nbsp;   </td>  <td>  &nbsp;   </td><td>  &nbsp;  </td>
+
+ </tr> -->
+<tr>  <td> &nbsp;  </td>  <td>  &nbsp;  </td>  
+<td> Entry scale MML </td>  <td colspan="3"> <input style="width: 250px;" class="field" id="D32" type="text" disabled value="216"></td>  
+ <td colspan="1"> <input class="field" id="J32" type="text" disabled value="573"></td>    <td colspan="1"> <input class="field" id="L32" type="text" disabled value="252"> <!--</td>    <td>  &nbsp;   </td><td>  &nbsp;  </td> -->
+</tr>
+
+
+<tr>  <td> &nbsp;  </td>  <td>  &nbsp;  </td>  <td> Mid scale  </td> <td> <input class="field" id="D34" type="text" disabled value="216"></td>  
+
+<td>   <input class="field" id="F34" type="text" disabled value="195"></td>  <td>  <input class="field" id="H34" type="text" disabled value="195"></td>  <td>   <input class="field" id="J34" type="text" disabled value="573"></td>  <td><input class="field" id="L34" type="text" disabled value="252"></td>
+ </tr>
+
+</table>
+
+
+   </div>
+   <script type="text/javascript">
+   function calc() {
+
+    //ORIG VARS/CONSTANTS;
+N4=45;
+N5=7;
+N6=0.17;
+N7=7;
+N8=0;
+N19=.243;
+S21=1.3;
+N21=17.55 * S21;
+N22=0;
+N20=N21+N22;
+N25=10;
+N23=N25;
+N26=1;
+N28=0;
+O4=30;
+O5=7;
+O6=.042;
+O7=7;
+O8=0;
+O16=.2;
+O19=.00302;
+O21=.211*S21;
+O22=.4;
+O20=O21+O22;
+O24=.15;
+//O23=O24+O25 O25 IS UNDEFINED;
+P19=.0009;
+P21 =0.0577 * S21;
+P22=0;
+P20=P21+P22;
+Q16=.1;
+Q19=0;
+Q21=0;
+Q22=.2;
+Q20=Q21+Q22;
+//Q23=Q24+Q25  UNDEFINED;
+Q24=.1;
+//Q25 UNDEFINED;
+R15=1;
+R18=.4;
+//------------------------------------------------------------------;
+//CONSTANTS ---------------------------------------------------- ;
+D27=0;
+D28=0;
+N28=0;
+D14=60;
+F27=0;
+H27=0;
+J27=0;
+L17=60;
+J26=N26=1;
+H14=60;
+
+//VARS;
+//SUMA=SUM(D14:L15)=D16+D27+F27+H27;
+
+       var B4 =parseInt(document.getElementById('B4').value);
+       var C4 =parseInt(document.getElementById('C4').value);
+       var D4 =parseInt(document.getElementById('D4').value);
+       var J5 =parseInt(document.getElementById('J5').value);
+       var L4 =parseInt(document.getElementById('L4').value);
+       var L5 =parseInt(document.getElementById('L5').value);
+       var L6 =parseInt(document.getElementById('L6').value);
+       var L7 =parseInt(document.getElementById('L7').value);
+       var L8 =parseInt(document.getElementById('L8').value);
+       var D14 =parseInt(document.getElementById('D14').value);
+       var D16 =parseInt(document.getElementById('D16').value);
+       var D27 =parseInt(document.getElementById('D27').value);
+       var F27 =parseInt(document.getElementById('F27').value);
+       var H16 =parseInt(document.getElementById('H16').value);
+       var H27 =parseInt(document.getElementById('H27').value);
+       var J27 =parseInt(document.getElementById('J27').value);
+       var J26 =parseInt(document.getElementById('J26').value);
+       var F16 =parseInt(document.getElementById('F16').value);
+       var J16 =parseInt(document.getElementById('J16').value);
+       var J19 =parseInt(document.getElementById('J19').value);
+       var J20 =parseInt(document.getElementById('J20').value);
+       var J23 =parseInt(document.getElementById('J23').value);
+       var L16 =parseInt(document.getElementById('L16').value);
+       var L17 =parseInt(document.getElementById('L17').value);
+       var L18 =parseInt(document.getElementById('L18').value);
+      var J14=D14;
+      var D15=B4;
+      var H15=D15;
+        //var D28=0;
+
+       // var SUMA=D16+D27+F27+H27;  
+       var SUMA=D14 +D15  + D16 +D27+ F16+ F27 +H16 +H27+ J16 + J19 +J20 +J23 +J26 +J27 + L16 + L17 + L18; 
+        //SUMB= SUM(L13:L28) = L14 +L15+L16 +L17+L18;
+        //var SUMB= L14 +L15+L16 +L17+L18;
+        var SUMB= L16 +L17+L18;
+        //SUMC= SUM(H14:H28) = H14+H15+H16+H27;
+        var SUMC= H14+H15+H16+H27;
+        //SUMD= SUM(J14:J28) = J14+J15+J16+J19+J20+J23+J26+J27;
+        var SUMD = J14+J15+J16+J19+J20+J23+J26+J27;
+        var SUME = D14+D15+D16+D27+D28   + F16+F27 + H16+H27  + J16+J19+J20+J23+J26+J27 + L16+L17+L18;
+        //---------------------------------------------------------------------------------------;
+        //D15 =| SUM('draft sizing tool4'!System_Memory) | = B4;
+
+        var D16=(D12/J5) * (L5 * ((O16*C4) + (Q16*J5)));
+        var F16=(F12/J5) *(L5 * ((O16*C4) + (Q16*J5)));
+        var F17=(H12/J5) *  (L5 * ((O16*C4) + (Q16*J5)));
+        var J23=L7 * ((O24*C4) + (Q24*J5)) + N25;
+        var J20=L6 * ( (N20 + (O20*C4) + (P20*C4*D4) + (Q20 * J5)));
+        var J19=L4* (N19 + (O19*C4) + (P19*C4*D4)) ;
+        //--------------------------------------------------------------------------------------------------------;
+        var L18 =B4*R18;
+        var L16=(L12/J5) *(L5 * ((O16*C4) + (Q16*J5)));
+        var H16=(H12/J5) *  (L5 * ((O16*C4) + (Q16*J5)));
+        //Bottom;
+        //D30? Entry scale =SUM(D14:L15) + L5 * ((O16*C4) + (Q16*J5)) + SUM(D17:L28);
+        var D30=SUMA+ L5 * ((O16*C4) + (Q16*J5)) + SUME;
+        //D32=SUM(D14:L15)+D16+SUM(D17:H28)  = D16+D27+F27+D27+F27+H27+D28;
+        //D32=SUMA+D16+SUME  = D16+D27+F27+D27+F27+H27+D28;
+        var D32=SUMA+D16+SUME;
+        //J32=SUM(D14:L15) +  SUM(J14:J28)   = SUMA+ SUMD;
+        var J32= SUMA+ SUMD;
+        //L32=SUM(D14:L15) + SUM(L13:L28) = SUMA+ SUM(L13:L28) = SUMA+ SUMB;
+        var L32= SUMA+ SUMB;
+        //L34=SUM(D14:L15) +  SUM(L13:L28) =SUMA+SUMB;
+        var L34 =SUMA+SUMB;
+        //H34=SUM(D14:L15) + SUM(H14:H28) = SUMA+ SUMC;
+        var H34= SUMA+ SUMC;
+        //J34=SUM(D14:L15) +  SUM(J14:J28) = SUMA+ SUMD;
+        var J34= SUMA+ SUMD;
+        //D34 =SUM(D14:D28) = D14+D15+D16+D27+D28;
+        var D34 = D14+D15+D16+D27+D28;
+
+    alert (D15);
+
+
+ 
+   document.getElementById('D30').value=D30;
+ 
+   }
+   </script>
+</body>
+</html>
